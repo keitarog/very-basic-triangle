@@ -26,7 +26,7 @@ FRAMEWORKS += -framework OpenGL
 LDFLAGS = $(FRAMEWORKS)
 
 .PHONY: all
-all: $(TARGET)
+all: $(TARGET) 
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp $(DEPS)
 	$(CXX) -c $(CXXFLAGS) -o $@ $<
